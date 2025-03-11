@@ -42,6 +42,7 @@ li {
 ul {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 p {
@@ -51,6 +52,7 @@ p {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 img {
@@ -66,6 +68,8 @@ img {
         
 }
 
+/*header*/
+
 .body-header {
 background: #FFFFFF;
 border-bottom: 1px solid #e7e9fc;
@@ -78,8 +82,7 @@ unicode-bidi: isolate;
    width: 1158px;
    margin: 0 auto;
    padding: 0 15px;
-   justify-content: space-between;
-   align-items: center;
+   
 }
 
 .nav-container {
@@ -99,6 +102,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4D5AE5;
 margin-right: 76px;
+display: inline-block;
 }
 
 .logo-part {
@@ -158,7 +162,7 @@ font-style: normal;
     color: #404bbf;
 }
 
-/*main*/
+/*1 section*/
 
 .main-page-title {
     background: #2E2F42;
@@ -201,22 +205,24 @@ font-style: normal;
     cursor: pointer;
 }
 
+/*2section*/
+
 .our-company {
     padding: 120px 0;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset (100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
 .service-list {
 padding: 0;
@@ -225,6 +231,8 @@ gap: 24px;
 display: flex;
 }
    
+/*приховани h2*/
+
 .service-list-item {
  flex-basis: calc((100% - 72px) / 4);
 }
@@ -245,6 +253,9 @@ display: flex;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/*3 section*/
+
 .team {
 background-color: #F4F4FD;
 padding: 120px 0;
@@ -299,6 +310,8 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
 }
+
+/*4 section*/
 
 .our-portfolio {
     padding: 120px 0;
@@ -356,8 +369,19 @@ font-weight: 400;
 
 /*footer*/
 
+.footer-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo-part-button {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 font-weight: 700;
 font-size: 18px;
