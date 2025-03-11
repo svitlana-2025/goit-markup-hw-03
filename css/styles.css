@@ -61,11 +61,6 @@ img {
     height: auto;
 }
 
-.body-header a {
-    display: block;
-    padding: 24px 0;
-}
-
 .container {
     max-width: 1158px;
     margin: 0 auto;
