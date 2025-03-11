@@ -61,11 +61,16 @@ img {
     height: auto;
 }
 
+.body-header a {
+    display: block;
+    padding: 24px 0;
+}
+
 .container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-        
+    justify-content: space-between;
 }
 
 /*header*/
@@ -77,11 +82,13 @@ display: flex;
 unicode-bidi: isolate;
 }
 
-.container-header {
-   display: flex;
+.container-flex {
+display: flex;
    width: 1158px;
    margin: 0 auto;
    padding: 0 15px;
+   justify-content: space-between;
+   align-items: center;
    
 }
 
@@ -136,18 +143,17 @@ padding: 24px 0;
     color: #404bbf;
 }
 
-.contakt {
-font-style: normal;
-}
+
 
 .contact-list {
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
     display: flex;
 }
 
 
 .contakt .contakt-link {
+    unicode-bidi: isolate;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -155,6 +161,7 @@ font-style: normal;
     font-style: normal;
     cursor: pointer;
     color: #434455;
+    
 }
 
 .contakt .contakt-link:hover, 
